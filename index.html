@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Validation du formulaire en javaScript</title>
+</head>
+<body>
+    <div class="container-fluid px-0">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="image ">
+                    <img class="img-fluid image-principal" src="image/ordivrai.png" alt="image de l'ordinateur">
+                </div>
+            </div>
+            <div class="col">
+                
+                <div class="formulaire">
+                    <p class=" mt-4 d-flex justify-content-end d-flex align-items-center">already have account? <button type="button" class=" text-uppercase ms-4 connect  btn btn-light">sign in</button></p>
+                    <h1 class="h1">Welcome to Focus</h1>
+                    <p>register your account</p>
+                    <form my-4 action="" method="post">
+                        <div class="form-group my-4">
+                            <label for="name" class="fw-bold">Name</label>
+                            <input placeholder="Enter your name here" class="form-control" type="text" name="nom" id="name">
+                            
+                        </div>
+                        
+    
+                        <div class="form-group my-4">
+                            <label for="email" class="fw-bold">Email</label>
+                            <input class="form-control input" type="email" name="mail" id="email">
+                        </div>
+    
+                        <div class="form-group my-4">
+                            <label for="password" class="fw-bold">Password</label>
+                            <input class="form-control input" type="password" name="password" id="password">
+                        </div>
+    
+                        <div class="form-group my-4">
+                            <label for="passwordConfirm" class="fw-bold">Confirm your Password</label>
+                            <input class="form-control input" type="password" name="passwordConfirm" id="passwordConfirm">
+                        </div>
+                        <button class="boutton btn btn-primary border-0 my-4" type="submit" onclick="recuperer()">Login</button>
+                    </form>
+                    <p>Create account whith:
+                        <a href="https://facebook.com"><img width="50px" src="image/facebook.jfif" alt="logo de facebook"></a>
+                        <a href="https://linkedin.com"><img width="50px" src="image/lindin.jfif" alt="logo de linkedin"></a>
+                        <a href="https://google.com"><img width="40px" src="image/google.jfif" alt="logo de google"></a>
+                    </p>
+                </div>
+
+            </div>
+        </div>    
+    </div>
+    <script src="asset/js/script.js"></script>
+    <script >
+    //     function recuperer(){
+    //         var nom = document.getElementById('name').value;
+    //         var email = document.getElementById('email').value;
+    //         var password = document.getElementById('password').value;
+    //         var passwordConfirm = document.getElementById('passwordConfirm').value;
+
+    //         //gestion du nom
+    //         if(nom.length == ' '){
+    //             var mNom = 'Vous devez saisir un nom';
+    //         } else if( nom.length < 2){
+    //             mNom = " votre nom doit comporter au moins deux caractères";
+    //         }else if( nom.length > 60){
+    //             mNom = ' Votre nom doit inférieur à 61 caractères ';
+    //         }else{
+    //             mNom = 'ok';
+    //         }
+
+    //         //gestion de l'email
+    //         var gmail = '@gmail.com' ;
+    //         var yahoo = '@yahoo';
+    //         var ymail =  '@ymail'; 
+    //         var outlook =  '@outlook';
+
+    //         var m_gmail = email.search(gmail);
+    //         var m_yahoo = email.search(yahoo);
+    //         var m_ymail = email.search(ymail);
+    //         var m_outlook = email.search(outlook);
+
+    //         if(m_gmail > -1 || m_yahoo > -1 || m_ymail > -1 || m_outlook > -1){
+    //             mEmail = "ok";
+    //         }else if(email == ''){
+    //             mEmail = "Vous devez entrer un email";
+    //         }else{
+    //             mEmail = "Votre email n'est pas au bon format";
+    //         }
+
+    //         //gestion du mot de pass
+    //         if(password != '' && passwordConfirm != '' &&  password == passwordConfirm ){
+    //             mPassword = "ok";
+    //         }else if(password == '' && passwordConfirm == ''){
+    //             mPassword = "Vous devez obligatoirement entrer de mot de pass";
+    //         }else{
+    //             mPassword = "les mots de pass ne sont pas identique";
+    //         }
+    //         //message d'affichage
+    //         if(mNom == 'ok' && mEmail == "ok" && mPassword == "ok" ){
+    //             alert('Vos donnez seront stocké dans la base de donnée!');
+    //         } else{
+    //             alert(mNom + '\n' + mEmail + '\n' + mPassword);
+    //         }
+
+
+    //         // alert(mEmail);
+    //         // alert(mNom);
+            
+    //     }
+        
+    
+    // </script>
+</body>
+</html>

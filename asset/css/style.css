@@ -1,0 +1,42 @@
+
+body{
+    max-width: 100%;
+}
+.image{
+    height: 100vh
+}
+
+.image-principal{
+    width: 100%;
+    height: 100%;
+}
+
+
+/* style lié au formulaire*/
+.connect{
+    width: 120px;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid #7433ff;
+}
+.connect:hover{
+    border: 1px solid #7433ff;
+}
+p{
+    color:rgb(177, 177, 176);
+}
+.formulaire{
+    width: 80%;
+    margin: auto;
+}
+.input{
+    outline: none;
+}
+.input:focus{
+    outline: 2px solid #7433ff ;
+}
+.boutton{
+    width: 120px;
+    background-color: #7433ff;
+    border-radius: 25px;
+}
