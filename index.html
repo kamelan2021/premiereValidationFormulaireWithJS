@@ -11,40 +11,43 @@
 <body>
     <div class="container-fluid px-0">
         <div class="row">
-            <div class="col-lg-5">
-                <div class="image ">
-                    <img class="img-fluid image-principal" src="image/ordivrai.png" alt="image de l'ordinateur">
+            <div class="col-lg-5 px-0">
+                <div class="image">
+                    <img class="image-principal" src="image/xps-uWFFw7leQNI-unsplash.jpg" alt="image de l'ordinateur">
                 </div>
             </div>
             <div class="col">
                 
                 <div class="formulaire">
                     <p class=" mt-4 d-flex justify-content-end d-flex align-items-center">already have account? <button type="button" class=" text-uppercase ms-4 connect  btn btn-light">sign in</button></p>
-                    <h1 class="h1">Welcome to Focus</h1>
-                    <p>register your account</p>
-                    <form my-4 action="" method="post">
+                    <h1 class="black">Welcome to Focus</h1>
+                    <p class="red">register your account</p>
+                    <form my-4 action="page2.html" method="post" id= myForm>
                         <div class="form-group my-4">
                             <label for="name" class="fw-bold">Name</label>
-                            <input placeholder="Enter your name here" class="form-control" type="text" name="nom" id="name">
-                            
+                            <input placeholder="Enter your name here" class="form-control mb-2" type="text" name="nom"  id="name" autocomplete="off" >
+                            <span class="text-danger fw-bold bg-light my-2 " id="mes-nom"></span>
                         </div>
                         
     
                         <div class="form-group my-4">
                             <label for="email" class="fw-bold">Email</label>
-                            <input class="form-control input" type="email" name="mail" id="email">
+                            <input class="form-control input my-2" type="email" name="mail" id="email" autocomplete="off">
+                            <span class="text-danger fw-bold bg-light " id="mes-email"></span>
                         </div>
     
                         <div class="form-group my-4">
                             <label for="password" class="fw-bold">Password</label>
-                            <input class="form-control input" type="password" name="password" id="password">
+                            <input class="form-control input my-2" type="password" name="password" id="password" autocomplete="off">
+                            <span class="text-danger fw-bold bg-light " id="passwordMessage"></span>
                         </div>
     
                         <div class="form-group my-4">
                             <label for="passwordConfirm" class="fw-bold">Confirm your Password</label>
-                            <input class="form-control input" type="password" name="passwordConfirm" id="passwordConfirm">
+                            <input class="form-control input my-2" type="password" name="passwordConfirm" id="passwordConfirm" autocomplete="off">
+                            <span class="text-danger fw-bold bg-light" id="passwordMessageconf"></span>
                         </div>
-                        <button class="boutton btn btn-primary border-0 my-4" type="submit" onclick="recuperer()">Login</button>
+                        <button class="boutton btn btn-primary border-0 my-4" type="submit" >Login</button>
                     </form>
                     <p>Create account whith:
                         <a href="https://facebook.com"><img width="50px" src="image/facebook.jfif" alt="logo de facebook"></a>
@@ -56,7 +59,7 @@
             </div>
         </div>    
     </div>
-    <script src="asset/js/script.js"></script>
+    <script src="asset/js/script2.js"></script>
     <script >
     //     function recuperer(){
     //         var nom = document.getElementById('name').value;
